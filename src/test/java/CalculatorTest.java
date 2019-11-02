@@ -19,4 +19,11 @@ public class CalculatorTest {
         int expectedProduct = 2;
         assertEquals(expectedProduct, product);
     }
+
+    @Test
+    public void divideTest() {
+        double quotient = calc.divide(1,2);
+        double expectedQuotient = 0.5;
+        assertEquals(expectedQuotient, quotient, 0.01);
+    }
 }
